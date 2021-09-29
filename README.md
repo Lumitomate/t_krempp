@@ -6,4 +6,4 @@
 
 * [Tototo](http://lumitomate.github.io/t_krempp/tototo.html)
 * [labyrinthe](http://lumitomate.github.io/t_krempp/Labyrinthe/labyrinthe_vr.html)
-* [Suuuuuzaaaaane](http://lumitomate.github.io/t_krempp/Labyrinthe/Suzanne.html)
+* [Suuuuuzaaaaane](http://lumitomate.github.io/t_krempp/Labyrinthe/suzanne_test.html)
