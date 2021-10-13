@@ -4,24 +4,42 @@
   </head>
   <body>
     <a-scene>
-       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#ECECEC"></a-box>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#ECECEC"></a-box>
+      <a-box position="2 2 -4" rotation="0 0 0" scale="2 0.1 2" color="#3AFF17"></a-box>
+      <a-box position="3 1 -4" rotation="0 0 0" scale="2 0.1 2" color="#3AFF17"></a-box>
+
       <a-sphere position="0 1.25 -5" radius="1.25" color="#ECECEC"></a-sphere>
+
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#ECECEC"></a-cylinder>
+
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+        
       <a-sky color="#B8F9FA"></a-sky>
+
+
+      
+      <a-entity light="type: ambient; intensity: 0;"></a-entity>
 
       <a-entity light="type: point;
                    castShadow: true;
                    intensity: 1;
                    shadowCameraVisible: false;"
-                position="0 3 -4"></a-entity>
+                position="-2 4 -4"></a-entity>
 
       <a-entity light="type: point;
                 castShadow: true;
                 intensity: 1;
                 shadowCameraVisible: false;
                 color: #FF6417"
-             position="2 2 -3"></a-entity>
+             position="2 4 -3"></a-entity>
+
+      <a-entity light="type: spot;
+             castShadow: true;
+             angle: 20;
+             intensity: 1;
+             shadowCameraVisible: false;"
+          rotation="-90 0 0"
+          position="1.5 3 -4"></a-entity>
 
     </a-scene>
   </body>

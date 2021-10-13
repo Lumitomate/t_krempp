@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-cylinder rotation="0 0 90" 
+                  position="0.8 0.5 -4" 
+                  radius="0.2" 
+                  height="1" 
+                  color="#000000"
+                  shadow="cast: true; receive:true"></a-cylinder>
+     
+      <a-cylinder rotation="0 0 90" 
+                  position="2 0.5 -4" 
+                  radius="0.2" height="1" 
+                  color="#000000"
+                  shadow="cast: true; receive:true"></a-cylinder>
+    
+      <a-plane  position="0 0 -4" 
+                rotation="-90 0 0" 
+                width="4" 
+                height="4" 
+                color="#7BC8A4" 
+                shadow="cast: true; receive:true"></a-plane>
+        
+      <a-sky color="#000000"></a-sky>
+
+
+      
+      <a-entity light="type: ambient; intensity: 0.1;"></a-entity>
+
+      <a-entity light="type: spot;
+             castShadow: true;
+             angle: 20;
+             intensity: 1;
+             shadowCameraVisible: false;"
+          rotation="-90 0 0"
+          position="0 3 -4"></a-entity>
+
+    </a-scene>
+  </body>
+</html>
