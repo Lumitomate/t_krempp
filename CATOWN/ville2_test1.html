@@ -17,9 +17,11 @@
               gltf-model="#ville"
               shadow="cast: true; receive:true"></a-entity>></a-entity>
 
-    //---lune---
+    //---ambient---
 
-    <a-entity light="type: ambient; intensity: 1;"></a-entity>
+    <a-entity light="type: ambient; intensity: 0;"></a-entity>
+
+    //---lune---
 
     <a-entity light="type: point;
               color: #002345;
@@ -135,6 +137,28 @@
                 intensity: 10;
                 shadowCameraVisible: false;"
                 position="1.4 2 13"
+                rotation="90 0 0"
+                ></a-entity>
+        
+      //---spot6---
+
+      <a-entity light="type: spot;
+                color: #FFFF65;
+                castShadow: true;
+                angle: 30;
+                intensity: 2;
+                shadowCameraVisible: false;"
+                position="12.4 5.5 13"
+                rotation="-90 0 0"
+                ></a-entity>
+
+      <a-entity light="type: spot;
+                color: #FFFF65;
+                castShadow: true;
+                angle: 8;
+                intensity: 10;
+                shadowCameraVisible: false;"
+                position="12.4 2 13"
                 rotation="90 0 0"
                 ></a-entity>
 
